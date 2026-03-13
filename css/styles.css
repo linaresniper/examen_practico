@@ -18,8 +18,42 @@
     grid-area: main;
 }
 
+.logo{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
 .footer {
     grid-area: footer;
+  background:#0b0b0b;
+  color:#fff;
+  padding:40px 20px;
+  font-family:Arial;
+}
+
+.footer-container{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+  gap:25px;
+}
+
+.footer a{
+  color:#ccc;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.footer a:hover{
+  color:#fff;
+}
+
+.footer-bottom{
+  border-top:1px solid #333;
+  margin-top:20px;
+  padding-top:10px;
+  font-size:13px;
 }
 
 @media (min-width: 768px) {

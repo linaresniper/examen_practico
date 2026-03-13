@@ -65,3 +65,17 @@
             "footer footer";
     }
 }
+.sherline{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.superheroe{
+    width: 300px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}

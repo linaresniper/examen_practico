@@ -1,16 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>la nasa</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- icono -->
+    <link rel="icon" type="icon" href="img/nasa-logo.svg">
 </head>
+
 <body>
+
+    <!-- grid principal: header  content y footer -->
     <div class="container">
-        <div class="item header"></div>
-        <div class="item content"></div>
+
+        <!-- HEADER -->
+        <div class="item header">
+            <nav class="navbar">
+                <div class="menu">☰</div>
+                <img src="img/nasa-logo.svg" alt="NASA" class="logo">
+                <div class="search">🔍</div>
+            </nav>
+
+            <!-- foto de fondo del hero -->
+            <img src="img/iss042e013697~large.jpg" alt="">
+
+            <h1 class="hero">La NASA</h1>
+            <h3 class="hero-text">Explora el universo y descubre tu planeta natal con nosotros.</h3>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="item content">
+
+            <!-- tabs de ciencia -->
+            <div class="science-section">
+                <nav class="science-tabs">
+                    <a href="#" class="science-tab science-tab--active">Ciencia de la NASA</a>
+                    <a href="#" class="science-tab">Space Place para niños</a>
+                    <a href="#" class="science-tab">Aeronáutica de la NASA</a>
+                </nav>
+
+                <!-- card principal con texto e imagen de la nebulosa -->
+                <div class="science-card">
+                    <div class="science-card__body">
+                        <h2 class="science-card__title">Ciencia de la NASA</h2>
+                        <p class="science-card__label">Para todos</p>
+                        <p class="science-card__text">
+                            La ciencia es la clave para descubrir los secretos del universo: uniendo a la humanidad con
+                            cada descubrimiento, expandiendo nuestro conocimiento y despertando nuestra imaginación. Al
+                            navegar por las arenas del tiempo y el espacio, la ciencia da contexto y significado a
+                            mediciones grandes y pequeñas. ¿Sabías que existen tantas estrellas en el universo como hay
+                            granos de arena en la Tierra? La nueva era de los descubrimientos científicos de la NASA
+                            acaba de comenzar, ¡y tú eres parte de ella!
+                        </p>
+                        <a href="#" class="science-card__link">Lee más <span class="science-card__arrow">→</span></a>
+                    </div>
+                    <div class="science-card__media">
+                        <img src="img/main_image_star-forming_region_carina_nircam_final-5mb.jpg"
+                            alt="Nebulosa Carina - NASA James Webb">
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOTICIAS -->
+            <div class="news">
+                <div class="news-section">
+                    <h2 class="news-title">Noticias</h2>
+                    <p class="news-subtitle">Recibe las últimas noticias y actualizaciones de la NASA en español.</p>
+
+                    <!-- grid de 3 noticias, en celular se apilan -->
+                    <div class="news-grid">
+
+                        <article class="news-card">
+                            <img src="img/suit-patch.jpg" alt="Misión Artemis II">
+                            <div class="news-card__info">
+                                <h3 class="news-card__heading">Agenda diaria de la misión a la Luna de Artemis II de la
+                                    NASA</h3>
+                                <span class="news-card__read">15 min read</span>
+                                <p class="news-card__excerpt">Unos ocho minutos después del despegue de Artemis II, la
+                                    nave espacial Orion y su...</p>
+                                <div class="news-card__meta">
+                                    <span class="news-card__date">March 13, 2026</span>
+                                    <span class="news-card__tag">⓪ Article</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-card">
+                            <img src="img/ksc-20260225-ph-csh01-0077large.jpg" alt="Evaluación Artemis II">
+                            <div class="news-card__info">
+                                <h3 class="news-card__heading">La NASA compartirá información actualizada sobre la
+                                    evaluación de aptitud para el vuelo de Artemis II</h3>
+                                <span class="news-card__read">3 min read</span>
+                                <p class="news-card__excerpt">Nota del editor: Esta nota se actualizó el 10 de marzo de
+                                    2026 para reflejar los participantes más recientes en...</p>
+                                <div class="news-card__meta">
+                                    <span class="news-card__tag">⓪ News Release</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="news-card">
+                            <img src="img/iss074e0325229~large.jpg" alt="Artemis arquitectura">
+                            <div class="news-card__info">
+                                <h3 class="news-card__heading">La NASA refuerza Artemis: añade una misión y perfecciona
+                                    su arquitectura general</h3>
+                                <span class="news-card__read">6 min read</span>
+                                <p class="news-card__excerpt">A fin de lograr el objetivo nacional de llevar astronautas
+                                    estadounidenses a la superficie de...</p>
+                                <div class="news-card__meta">
+                                    <span class="news-card__date">March 3, 2026</span>
+                                    <span class="news-card__tag">⓪ Article</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- banner con foto del astronauta -->
+                <div class="feature">
+                    <img src="img/52504566415-4eccda5d36-rubio-eva.jpg"
+                        alt="Astronauta en la Estación Espacial Internacional">
+                    <div class="feature__overlay"></div>
+                    <div class="feature__content">
+                        <h2 class="feature__title">Recorre la estación espacial en español</h2>
+                        <p class="feature__text">El astronauta de la NASA Frank Rubio, que batió récords, ofrece el
+                            primer recorrido en video en español de la agencia por el hogar de la humanidad en el
+                            espacio –la Estación Espacial Internacional.</p>
+                        <a href="#" class="feature__link">Míralo en NASA+ <span class="feature__arrow">→</span></a>
+                    </div>
+                </div>
+
+                <!-- video de yutub -->
+                <!-- los atributos width y height del iframe los manejo desde css con aspect ratio -->
+                <div class="video-section">
+                    <div class="video-wrap">
+                        <h2 class="video-title">Espacio a Tierra</h2>
+                        <div class="video-player">
+                            <iframe
+                                src="https://www.youtube.com/embed/DAmPxshRPEQ?list=PLXR757nNWDE1vivE4fhZZPctCoig7TqGY"
+                                title="Espacio A Tierra | En la carrera: 12 de junio 2025" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p class="video-caption">
+                            <strong>Espacio a Tierra</strong>, la versión en español de las cápsulas Space to Ground de
+                            la NASA, te informa semanalmente de lo que está sucediendo en la Estación Espacial
+                            Internacional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- sección de suscripción al boletín -->
+                <div class="subscribe">
+                    <img src="img/solar-system-artist-concept.jpg" alt="Sistema solar">
+                    <div class="subscribe__overlay"></div>
+                    <div class="subscribe__content">
+                        <h2 class="subscribe__title">¡Suscríbete!</h2>
+                        <p class="subscribe__text">Recibe en tu buzón de correo electrónico nuestro boletín semanal para
+                            no perderte ninguno de nuestros avances en la exploración del espacio y la Tierra.</p>
+                        <a href="#" class="subscribe__link">Apúntate <span class="subscribe__arrow">→</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--FOOTER(la parte de la ale) -->
         <div class="item footer"></div>
+
     </div>
+
 </body>
+
 </html>
